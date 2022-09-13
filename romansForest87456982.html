@@ -1,0 +1,48 @@
+<!DOCTYPE html>    
+<html lang="en">    
+    <head>    
+        <title>Helping Asterix and Obelix</title> 
+        <link rel="icon" type="image/x-icon" href="panoramix.png"> 
+		<link rel="stylesheet" type="text/css" href="styles.css">
+    </head>    
+    <body>
+        <div>
+            <h1>Yes there they are !! </h1>
+            <h1> Come on Asterix let's attack </h1>
+        </div>
+        <div>
+            <img src="romansInForest.png" alt="forest">
+        </div>
+        <br>
+        <form id="form">
+            <input type="text" id="attackName" name="attackName" placeholder="Attack name (Menhir, ... )">
+            <br>
+            <input class="submit" type="submit" value="Launch">
+        </form>
+        <p id="answer"></p>
+    </body>
+</html>
+<script>
+
+function launchAttack(event) {
+    event.preventDefault();
+    var data = document.getElementById("attackName");
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = () => {
+        if (xmlhttp.readyState === 4) {
+        document.getElementById("answer").innerHTML = xmlhttp.response;
+        }
+    }
+    xmlhttp.open("POST","attacks.php");
+    xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+    //var xml = '<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE foo [<!ELEMENT foo ANY > <!ENTITY xxe SYSTEM "attacks.xml" >]> <creds> <user>`&xxe;`</user> </creds>';
+    var xml = '<?xml version="1.0" encoding="UTF-8"?> <attack>'+data.value +'</attack>';
+    xmlhttp.send(xml);
+    
+}
+
+const form = document.getElementById('form');
+form.addEventListener('submit', launchAttack);
+
+</script>

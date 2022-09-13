@@ -1,0 +1,62 @@
+body  
+{    
+    background-color:#BF946F;  
+    font-family: monospace;  
+    width: 750px;
+    margin: auto;
+}
+
+h1{  
+    text-align: center;  
+    color: darkred;  
+    padding: 20px;
+    font-size: 3em;
+}  
+
+p{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+img{
+    height: 100%; 
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    background-color: darkred;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: monospace; 
+    font-size: 16px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    font-family: monospace;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.submit {
+    background-color: darkred;
+    color: white;
+}
+                    
