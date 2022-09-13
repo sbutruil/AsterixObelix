@@ -2,7 +2,7 @@
 <html lang="en">    
 	<head>    
 		<title>Helping Asterix and Obelix</title> 
-		<link rel="icon" type="image/x-icon" href="panoramix.png">
+		<link rel="icon" type="image/x-icon" href="Panoramix.PNG">
 		<link rel="stylesheet" type="text/css" href="styles.css">    
 	</head>
 	<header>
