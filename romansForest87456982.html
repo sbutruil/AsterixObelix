@@ -2,7 +2,7 @@
 <html lang="en">    
     <head>    
         <title>Helping Asterix and Obelix</title> 
-        <link rel="icon" type="image/x-icon" href="panoramix.png"> 
+        <link rel="icon" type="image/x-icon" href="Panoramix.PNG"> 
 		<link rel="stylesheet" type="text/css" href="styles.css">
     </head>    
     <body>
@@ -36,8 +36,7 @@ function launchAttack(event) {
     }
     xmlhttp.open("POST","attacks.php");
     xmlhttp.setRequestHeader('Content-Type', 'text/xml');
-    //var xml = '<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE foo [<!ELEMENT foo ANY > <!ENTITY xxe SYSTEM "attacks.xml" >]> <creds> <user>`&xxe;`</user> </creds>';
-    var xml = '<?xml version="1.0" encoding="UTF-8"?> <attack>'+data.value +'</attack>';
+    var xml = '<?xml version="1.0" encoding="UTF-8"?> <attacks><attack>'+data.value +'</attack></attacks>';
     xmlhttp.send(xml);
     
 }
