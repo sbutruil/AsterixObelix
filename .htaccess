@@ -1,1 +1,4 @@
-DirectoryIndex index.php index.html
+<Files "attacks.xml">  
+  Order Allow,Deny
+  Deny from all
+</Files>
