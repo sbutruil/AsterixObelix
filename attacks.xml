@@ -2,46 +2,46 @@
 <attacks>
   <attack>
     <name>Menhir</name>
-    <power> 300 </power>
+    <power>300</power>
   </attack>
   <attack>
     <name>Bullet</name>
-    <power> 200 </power>
+    <power>200</power>
   </attack>
   <attack>
     <name>Fish</name>
-    <power> 50 </power>
+    <power>50</power>
   </attack>
   <attack>
     <name>Asterix</name>
-    <power> 500 </power>
+    <power>500</power>
   </attack>
   <attack>
     <name>Cannon</name>
-    <power> 700 </power>
+    <power>700</power>
   </attack>
   <attack>
     <name>Obelix</name>
-    <power> 900 </power>
+    <power>900</power>
   </attack>
   <attack>
     <name>PotionForEveryone</name>
-    <power> 10000 </power>
+    <power>10000</power>
   </attack>
   <attack>
     <name>Idefix</name>
-    <power> 40 </power>
+    <power>40</power>
   </attack>
   <attack>
     <name>Spear</name>
-    <power> 100 </power>
+    <power>100</power>
   </attack>
   <attack>
     <name>Running</name>
-    <power> 60 </power>
+    <power>60</power>
   </attack>
   <attack>
     <name>Jumping</name>
-    <power> 20 </power>
+    <power>20</power>
   </attack>
 </attacks>
