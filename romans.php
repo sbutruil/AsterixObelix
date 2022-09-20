@@ -5,7 +5,7 @@ session_start();
 if(isset($_GET['coordinates']))
 {
     $coordinates = $_GET['coordinates'];
-    if (str_contains($coordinates, "48.78")  && str_contains($coordinates, "-3.52")) {
+    if (strpos($coordinates, "48.78") !== false && strpos($coordinates, "-3.52") !== false) {
         readfile("romansForest87456982.html");
         exit();
     } else {
@@ -16,4 +16,3 @@ if(isset($_GET['coordinates']))
     readfile("forest.html");
     exit();
 }
-
