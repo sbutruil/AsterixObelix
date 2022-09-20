@@ -16,7 +16,7 @@ if(count($attackLaunch) == 1) {
         if ($name == $attackName) {
             $power = (string) $attack->power;
             if($power == "10000"){
-                echo "Congratulations, you vanquished the romans! The flag is CTF{}";
+                echo "Congratulations, you vanquished the romans! The flag is CTF{Potion_is_54782_times_stronger_than_anything}";
                 exit();
             } else {
                 echo "Ouch, the attack is not strong enough, you need more than  " . $power . "‰ power.";
